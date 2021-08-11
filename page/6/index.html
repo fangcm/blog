@@ -1,851 +1,125 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Hexo Theme Keep">
-    <meta name="description" content="&lt;br&gt;&lt;strong&gt;岁月有痕&amp;emsp;都在心扉&lt;br&gt;&lt;font color=chocolate&gt;有梦就还年轻&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;">
-    <meta name="author" content="黑狼">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>黑狼的博客</title><meta name="author" content="黑狼"><meta name="copyright" content="黑狼"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="岁月有痕&amp;emsp;都在心扉有梦就还年轻"><meta property="og:type" content="website"><meta property="og:title" content="黑狼的博客"><meta property="og:url" content="https://fangcm.github.io/blog/page/6/"><meta property="og:site_name" content="黑狼的博客"><meta property="og:description" content="岁月有痕&amp;emsp;都在心扉有梦就还年轻"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://fangcm.github.io/blog/img/avatar.jpg"><meta property="article:author" content="黑狼"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://fangcm.github.io/blog/img/avatar.jpg"><link rel="shortcut icon" href="/blog/img/favicon.png"><link rel="canonical" href="https://fangcm.github.io/blog/page/6/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload='this.media="all"'><script>const GLOBAL_CONFIG = { 
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '黑狼的博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: ,
+  isToc: false,
+  postUpdate: '2021-08-11 18:16:45'
+}</script><noscript><style type="text/css">#nav{opacity:1}.justified-gallery img{opacity:1}#post-meta time,#recent-posts time{display:inline!important}</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-    <title>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-        黑狼的博客
-    </title>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-<link rel="stylesheet" href="/blog/css/style.css">
-
-    <link rel="shortcut icon" href="/blog/images/logo.svg">
-    
-<link rel="stylesheet" href="/blog/css/font-awesome.min.css">
-
-    <script id="hexo-configurations">
-    let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"fangcm.github.io","root":"/blog/","language":"zh-CN"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/img/avatar.jpg","favicon":"/images/logo.svg","article_img_align":"center","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.3"};
-    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
-  </script>
-</head>
-
-
-<body>
-<div class="progress-bar-container">
-    
-
-    
-</div>
-
-
-<main class="page-container">
-
-    
-
-    <div class="page-main-content">
-
-        <div class="page-main-content-top">
-            <header class="header-wrapper">
-
-    <div class="header-content">
-        <div class="left">
-            
-            <a class="logo-title" href="/">
-                黑狼的博客
-            </a>
-        </div>
-
-        <div class="right">
-            <div class="pc">
-                <ul class="menu-list">
-                    
-                        <li class="menu-item">
-                            <a class="active"
-                               href="/blog/"
-                            >
-                                首页
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/blog/archives"
-                            >
-                                归档
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/blog/categories"
-                            >
-                                分类
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/blog/tags"
-                            >
-                                标签
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/blog/about"
-                            >
-                                关于
-                            </a>
-                        </li>
-                    
-                    
-                </ul>
-            </div>
-            <div class="mobile">
-                
-                <div class="icon-item menu-bar">
-                    <div class="menu-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-drawer">
-        <ul class="drawer-menu-list">
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class="active"
-                       href="/blog/">首页</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/blog/archives">归档</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/blog/categories">分类</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/blog/tags">标签</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/blog/about">关于</a>
-                </li>
-            
-        </ul>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="page-main-content-middle">
-
-            <div class="main-content">
-
-                
-                    <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/6d0e3118/">
-                        让少先队员远离神仙（我和老婆的人神之战2）
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;上个周末，胡有理同志约我和她一起参加一个聚会，我没有去。去的人基本都是她的以前的同事或者同事的朋友，还包括她的老领导以及一位美国华人牧师，对于只是谈话类节目或者宣讲类节目的聚会，我是不喜欢参加的。我是无酒不欢，喜欢那种吆五喝六...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Apr 24 2012 14:17:00 GMT+0800">2012-04-24</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/blog/tags/%E4%BF%A1%E4%BB%B0/">信仰</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/6d0e3118/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/88b97e01/">
-                        装上了速度表，发现20公里小时也不算快
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;昨天又在淘宝买了些东西，码表、绑裤带、修车工具、补胎工具等。
-&emsp;&emsp;换上了正规的绑裤带，发现和我的松紧带差不了多少，无论是效果还是外观。也装上了速度表，这个不错，早上飞奔了一下，平均速度21 公里，最快32....
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Apr 20 2012 10:21:00 GMT+0800">2012-04-20</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/88b97e01/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/f505f2a9/">
-                        自己动手，制作我的车前包，以及我的新酷造型
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;骑了几天自行车，屁股已经渐渐适应了，目前只有腿还不太适应。
-
-
-&emsp;&emsp;今天早上，让小崽子给我照几张最新的英姿照，她满眼的不忿与不愿，说我： “会影响她的时间，再说那么难看有什么可照的，不要臭显摆了”。最后，我...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Apr 18 2012 12:25:00 GMT+0800">2012-04-18</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/blog/tags/%E5%81%A5%E8%BA%AB/">健身</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/blog/tags/%E9%AA%91%E8%A1%8C/">骑行</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/f505f2a9/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/60b2d6d5/">
-                        也许应该给小孩更多的空间（我的反思）
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;小孩上小学二年级了，已经开始滔滔不绝地表达意见了，也有了脾气。更加地难以“管理”，我和她之间早已不再是那种“我说她听”的关系了。
-&emsp;&emsp;最近一段时间，让我苦恼。我和小孩吵架、大打出手，已经发展成为了常规“战事...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Apr 16 2012 11:55:00 GMT+0800">2012-04-16</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%83%85%E6%84%9F/">情感</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/blog/tags/%E8%82%B2%E5%84%BF/">育儿</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/60b2d6d5/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/6d82d6cd/">
-                        第一次见车友，感慨非常多
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;在东方红1混了几天，我最关注的是二手骑行装备，也关注组装自行车经验、骑行经验，没事的时候也发几个帖子。
-&emsp;&emsp;在网上认识了个东北老乡，东方红的“焦立功”，他说非常支持我北京到长春的骑行，同时他也在网上卖东西，...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Apr 13 2012 23:19:00 GMT+0800">2012-04-13</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/6d82d6cd/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/a75fa48/">
-                        骑了三天自行车，腿疼了两夜
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;自行车到手后，纠结于车架子的大与小。在网上发了几个帖子，交换小点的车子或者车架子。有几个联系我的，不过，都是想给自己的自行车升级。其中一个哥们更是直接了当，夸了半天我的自行车哪个哪个配件比他的好，然后，想要跟我换，搞得我都没了...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Fri Apr 13 2012 10:22:00 GMT+0800">2012-04-13</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/a75fa48/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/71d80475/">
-                        看来我的屁股还需要更多的磨砺才行
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;买车子那天，从四惠桥骑车到三里河，用了 1 个小时；昨天早上，从三里河骑车到长虹桥，用了 1 个小时；昨天中午屁股有点小疼痛，不影响任何活动；昨天晚上，下雨，车子放单位，乘坐地铁；昨天夜里腿部肌肉有点小疼痛，轻度影响睡眠；今天...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Apr 11 2012 12:06:00 GMT+0800">2012-04-11</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/71d80475/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/eccf43d8/">
-                        车子有了，尽管有些大，不过，不影响我的高兴的心情此博文包含图片
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;骑行，最少需要个自行车！买个什么自行车呢？前两天在网上看了几篇关于自行车的文章，也向有经验的网友请教，网友们挺喜欢指导我这个新手的。不过，建议多了，我更是茫然无头绪。
-&emsp;&emsp;我比较纠结的问题：我很可能只骑行一...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Apr 10 2012 10:59:00 GMT+0800">2012-04-10</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E5%81%A5%E8%BA%AB/">健身</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/blog/tags/%E9%AA%91%E8%A1%8C/">骑行</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/eccf43d8/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/84a0d5c3/">
-                        上帝，你用满麻袋的钱把我砸晕吧（我和老婆间的人神之战）
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;昨天上午，胡有理同志说中午要出去理发。整个下午，我都在和小孩子斗法，她写会儿作业就要看会儿网络上的电视连续剧《仙剑奇侠传》，然后再写会儿、再看，她的想法很简单：“多点时间看电视，少点时间写作业”，我的想法很复杂：“什么保护眼睛...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Apr 09 2012 10:20:00 GMT+0800">2012-04-09</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                        <li>
-                            | 
-                            <a href="/blog/tags/%E4%BF%A1%E4%BB%B0/">信仰</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/84a0d5c3/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/blog/posts/58a3e6b1/">
-                        看来大家都挺2的
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        &emsp;&emsp;周末闲来无事，让小孩子自己去写作业，我四处转了转，去了一趟捷安特专卖店和美利达专卖店，自行车种类繁多，看的眼睛有点花，店家给我推荐的都是 2300 元左右的车子，说了一堆的专业术语，一头雾水，还说如果长途的话，全
-&emsp;...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sun Apr 08 2012 15:07:00 GMT+0800">2012-04-08</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/categories/%E9%95%BF%E6%98%A5%E5%8D%95%E8%BD%A6%E8%A1%8C/">长春单车行</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/posts/58a3e6b1/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-    </ul>
-
-    <div class="home-paginator">
-        <div class="paginator">
-    
-        <a class="prev btn"
-           href="/blog/page/5/"
-        >上一页</a>
-    
-
-    
-        <a class="next btn"
-           href="/blog/page/7/"
-        >下一页</a>
-    
-</div>
-
-    </div>
-</div>
-
-
-                
-            </div>
-
-        </div>
-
-        <div class="page-main-content-bottom">
-            <footer class="footer">
-    <div class="info-container">
-        <div class="copyright-info info-item">
-            &copy;
-            
-              <span>2020</span>&nbsp;-&nbsp;
-            
-            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">黑狼</a>
-        </div>
-        
-        <div class="theme-info info-item">
-            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
-        </div>
-        
-    </div>
-</footer>
-
-        </div>
-    </div>
-
-    
-
-    <div class="right-bottom-side-tools">
-        <div class="side-tools-container">
-    <ul class="side-tools-list">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
-
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
-
-        <li class="tools-item tool-expand-width flex-center">
-            <i class="fas fa-arrows-alt-h"></i>
-        </li>
-
-        <li class="tools-item tool-dark-light-toggle flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
-
-        <!-- rss -->
-        
-
-        
-            <li class="tools-item tool-scroll-to-top flex-center">
-                <i class="fas fa-arrow-up"></i>
-            </li>
-        
-
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="exposed-tools-list">
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
-        
-    </ul>
-</div>
-
-    </div>
-
-    
-
-    <div class="image-viewer-container">
-    <img src="">
-</div>
-
-
-    
-
-</main>
-
-
-
-
-
-<script src="/blog/js/utils.js"></script>
-
-<script src="/blog/js/main.js"></script>
-
-<script src="/blog/js/header-shrink.js"></script>
-
-<script src="/blog/js/back2top.js"></script>
-
-<script src="/blog/js/dark-light-toggle.js"></script>
-
-
-
-
-
-
-
-
-<div class="post-scripts">
-    
-</div>
-
-
-
-</body>
-</html>
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/blog/img/avatar.jpg" onerror='onerror=null,src="/img/friend_404.gif"' alt="avatar"></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/blog/archives/"><div class="headline">文章</div><div class="length-num">133</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/blog/tags/"><div class="headline">标签</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/blog/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-list"></i><span> 全部</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/blog/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/blog/">黑狼的博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-list"></i><span> 全部</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/blog/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/ea4ec0a3/" title="精子和卵子是怎样相遇的呢？">精子和卵子是怎样相遇的呢？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-05-16T01:27:00.000Z" title="发表于 2012-05-16 09:27:00">2012-05-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a></span></div><div class="content">&emsp;&emsp;“男人的精子和女人的卵子是怎样相遇的呢？”这个问题困扰了小豆包将近一年的时间了，这期间也反反复复地问我答案，也对我造成了将近一年的困扰。 &emsp;&emsp;问题的起因是上 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/ad28aced/" title="难道我真的有毛病了？">难道我真的有毛病了？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-05-15T03:44:00.000Z" title="发表于 2012-05-15 11:44:00">2012-05-15</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a></span></div><div class="content">黑狼语录： 如今评价谁有理，靠的是看谁的嗓门大、声音高。 &emsp;&emsp;以前我都是上京东商城的，自从上个月我知道胡有理的淘宝账号后，我经常上淘宝转上一圈。最近买自行车的装备也基本是在 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/b7201c59/" title="骑单车去廊坊吃驴肉面">骑单车去廊坊吃驴肉面</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-05-14T02:30:00.000Z" title="发表于 2012-05-14 10:30:00">2012-05-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E5%81%A5%E8%BA%AB/">健身</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/blog/tags/%E9%AA%91%E8%A1%8C/">骑行</a></span></div><div class="content">&emsp;&emsp;11 号下班后，出去买了件雨衣，回到家已经是晚上 9 点了。简单吃了点，就在屋子里折腾，把东西往背包里装，把背包往自行车上捆。被我老妈看见了，问我是不是明天要出去。我说：“明天 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/5934c6b5/" title="不要为了学习而学习">不要为了学习而学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-05-10T01:27:00.000Z" title="发表于 2012-05-10 09:27:00">2012-05-10</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a></span></div><div class="content">&emsp;&emsp;今天是家长开放日，还是让胡有理同志去体验了。这两天我最常说的一句话： “家里的事再小也是大事，单位的事再大也是小事”。 &emsp;&emsp;小豆包期中考试的最后一科数学成绩 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/ef165bbf/" title="哪里不平哪有我（下班了，回家揍孩子去）">哪里不平哪有我（下班了，回家揍孩子去）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-05-08T07:58:00.000Z" title="发表于 2012-05-08 15:58:00">2012-05-08</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a></span></div><div class="content">&emsp;&emsp;这几天的日子过得太煎熬了。小豆包过完五一后，马上就进行了期中考试。考前忙碌，家长比学生都忙；考后煎熬，家长比学生还紧张。考试成绩一科科的发下来，我的心情也是一点点的冰凉，终于上 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/aefe5d4c/" title="一切都不在控制之中">一切都不在控制之中</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-05-03T01:11:00.000Z" title="发表于 2012-05-03 09:11:00">2012-05-03</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a></span></div><div class="content">&emsp;&emsp;今早起来，除了屁股掉的皮还没有完全换新的外，其他的不适、疼痛均已消失。依照我的性格，本来还应该在兴奋中沉浸几天，不过被胡有理同志的几盆子冷水胡乱泼下来，热气被散了个干净。 &e ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/732de68a/" title="密云单车行，我为自己的冲动而感动（下）">密云单车行，我为自己的冲动而感动（下）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-04-30T14:15:00.000Z" title="发表于 2012-04-30 22:15:00">2012-04-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E5%81%A5%E8%BA%AB/">健身</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/blog/tags/%E9%AA%91%E8%A1%8C/">骑行</a></span></div><div class="content">黑狼语录： 饱满的热情，与大无畏的精神，让我坚持到了最后。 现在回想起来，我还觉得自己很坚强。哈哈。 &emsp;&emsp;最终，我大叫着冲到住宿农家院的时候，已经是晚上 7 点半左右了 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/cb9181ef/" title="密云单车行，我为自己的冲动而感动（上）">密云单车行，我为自己的冲动而感动（上）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-04-30T13:41:00.000Z" title="发表于 2012-04-30 21:41:00">2012-04-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E5%81%A5%E8%BA%AB/">健身</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/blog/tags/%E9%AA%91%E8%A1%8C/">骑行</a></span></div><div class="content">&emsp;&emsp;放假前一天，和大风较劲，搞得我腿很疼，为了避免影响五一出行，28 号特意坐了一天地铁。不过还是没有缓过劲来，疼，依然的疼，不管那么多了。 &emsp;&emsp;准备了半天，还 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/68ec3e33/" title="两全其美的计划">两全其美的计划</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-04-30T11:56:00.000Z" title="发表于 2012-04-30 19:56:00">2012-04-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/">北京周边单车行</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a></span></div><div class="content">&emsp;&emsp;明天就是五一假期了，尽管只有三天，胡有理同志还是来电话了，一边发布她的计划一边警告我必须服从她的计划，计划的内容是：“29 号去密云，顺便看看那边的一个房子，然后住在农家院，3 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/blog/posts/8199fb35/" title="爆发了！拳来拳往！">爆发了！拳来拳往！</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2012-04-30T11:34:00.000Z" title="发表于 2012-04-30 19:34:00">2012-04-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/blog/tags/%E6%83%85%E6%84%9F/">情感</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/blog/tags/%E6%9D%82%E8%B0%88/">杂谈</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/blog/tags/%E8%82%B2%E5%84%BF/">育儿</a></span></div><div class="content">&emsp;&emsp;这几天家里，颇不平静。 &emsp;&emsp;小豆包的行为越来越嚣张，主要有以下几点：缺少对长辈的尊敬、满嘴胡话毫无顾忌、作业（学习相关的动作）拖拉严重、经常偷跑去看电视电脑 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/blog/page/5/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/blog/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/14/">14</a><a class="extend next" rel="next" href="/blog/page/7/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/blog/img/avatar.jpg" onerror='this.onerror=null,this.src="/blog/img/friend_404.gif"' alt="avatar"></div><div class="author-info__name">黑狼</div><div class="author-info__description"><br><strong>岁月有痕&emsp;都在心扉<br><font color="chocolate">有梦就还年轻</font></strong><br></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/blog/archives/"><div class="headline">文章</div><div class="length-num">133</div></a></div><div class="card-info-data-item is-center"><a href="/blog/tags/"><div class="headline">标签</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/blog/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://blog.sina.com.cn/fangcm" target="_blank" title="新浪博客"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:fangcm2008@qq.com" target="_blank" title="电子邮箱"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget user-thanks" id="user-thanks"><div class="item-headline"><i class="fas fa-heart card-announcement-animation"></i><span>感谢爸爸妈妈：</span></div><div class="item-content">&emsp;&emsp;希望你们看了这些短文后明白，我和胡有理已经长大了。<br>&emsp;&emsp;如果生活能够重新再来一次，我希望你们不要为孩子奉献那么多，因为每个人，都应该享受自己的人生。<br><br>——送给所有的父母，也送给大豆包的父母</div></div><div class="sticky_layout"><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i> <span>分类</span></div><ul class="card-category-list" id="aside-cat-list"><li class="card-category-list-item"><a class="card-category-list-link" href="/blog/categories/%E5%8C%97%E4%BA%AC%E5%91%A8%E8%BE%B9%E5%8D%95%E8%BD%A6%E8%A1%8C/"><span class="card-category-list-name">北京周边单车行</span><span class="card-category-list-count">17</span></a></li><li class="card-category-list-item"><a class="card-category-list-link" href="/blog/categories/%E6%9D%82%E6%96%87/"><span class="card-category-list-name">杂文</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item"><a class="card-category-list-link" href="/blog/categories/%E6%B8%B8%E7%8E%A9%E3%80%81%E6%97%85%E8%A1%8C/"><span class="card-category-list-name">游玩、旅行</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item"><a class="card-category-list-link" href="/blog/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">生活随笔</span><span class="card-category-list-count">31</span></a></li><li class="card-category-list-item"><a class="card-category-list-link" href="/blog/categories/%E9%95%BF%E6%98%A5%E5%8D%95%E8%BD%A6%E8%A1%8C/"><span class="card-category-list-name">长春单车行</span><span class="card-category-list-count">76</span></a></li></ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/blog/tags/%E6%83%85%E6%84%9F/" style="font-size:1.33em;color:#365400">情感</a><a href="/blog/tags/%E6%9D%82%E8%B0%88/" style="font-size:1.45em;color:#9a6d38">杂谈</a><a href="/blog/tags/%E4%BF%A1%E4%BB%B0/" style="font-size:1.21em;color:#0d9a29">信仰</a><a href="/blog/tags/%E5%81%A5%E8%BA%AB/" style="font-size:1.39em;color:#159c4b">健身</a><a href="/blog/tags/%E9%AA%91%E8%A1%8C/" style="font-size:1.39em;color:#a06869">骑行</a><a href="/blog/tags/%E8%82%B2%E5%84%BF/" style="font-size:1.33em;color:#429943">育儿</a><a href="/blog/tags/%E6%95%99%E8%82%B2/" style="font-size:1.27em;color:#167bbf">教育</a><a href="/blog/tags/%E6%BD%AD%E6%8B%93%E5%AF%BA/" style="font-size:1.15em;color:#03b4b5">潭拓寺</a><a href="/blog/tags/%E8%A7%A3%E5%AD%97%E7%9F%B3/" style="font-size:1.15em;color:#0b37a0">解字石</a><a href="/blog/tags/%E5%8D%81%E4%B8%89%E9%99%B5/" style="font-size:1.15em;color:#856621">十三陵</a><a href="/blog/tags/%E4%BD%9C%E6%96%87/" style="font-size:1.21em;color:#357b35">作文</a><a href="/blog/tags/%E6%B3%B0%E5%9B%BD/" style="font-size:1.27em;color:#1fb83c">泰国</a><a href="/blog/tags/%E8%87%AA%E5%8A%A9%E6%B8%B8/" style="font-size:1.27em;color:#7db70f">自助游</a><a href="/blog/tags/%E7%8E%84%E5%B9%BB/" style="font-size:1.15em;color:#792d4f">玄幻</a><a href="/blog/tags/%E5%B0%8F%E5%B0%8F%E8%AF%B4/" style="font-size:1.15em;color:#026695">小小说</a><a href="/blog/tags/%E5%81%A5%E5%BA%B7/" style="font-size:1.15em;color:#c53422">健康</a><a href="/blog/tags/%E7%88%B6%E6%AF%8D/" style="font-size:1.15em;color:#90b354">父母</a><a href="/blog/tags/%E5%B9%BC%E5%8D%87%E5%B0%8F/" style="font-size:1.15em;color:#7d659e">幼升小</a></div></div></div></div></main><footer id="footer" style="background:0 0!important"><div id="footer-wrap"><div class="footer_custom_text"><strong>只为了有一天，<br>我还能记得我自己，<br>记得那些生命中的感动。</strong></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"></div></div></div><hr><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/blog/js/utils.js"></script><script src="/blog/js/main.js"></script><script src="/blog/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
